@@ -20,18 +20,3 @@
   --bg-color-accent: #FF0070;
   --bg-image: url(../images/cover-image-dark.png);
 }
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --color-main: #F1B2CE;
-    --color-accent: #FF0070;
-    --color-title: #DB00FF;
-    --color-shadow: #FF0070;
-    --color-inverted: #000028;
-    --color-hover: #FF007066;
-    --color-link-shadow: #FF0070;
-    --bg-color-main: #000028;
-    --bg-color-accent: #FF0070;
-    --bg-image: url(../images/cover-image-dark.png);
-  }
-}

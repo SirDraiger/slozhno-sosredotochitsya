@@ -1,12 +1,12 @@
 /* Основные стили проекта. Это стили для темы, которую вы верстаете первой. */
 
 .page {
+  /* сохраните в разметке и стилях класс page. На его основе работает скрипт. */
   display: flex;
   flex-direction: column;
   gap: 40px;
-  /* сохраните в разметке и стилях класс page. На его основе работает скрипт. */
-  color: var(--color-main, #F1B2CE);
-  font-family: var(--text-family-main, 'IBM Plex Mono');
+  color: var(--color-main, #f1b2ce);
+  font-family: var(--text-family-main, "IBM Plex Mono"), monospace;
   background-color: var(--bg-color-main, #000028);
   background-image: var(--bg-imadge, url(../images/cover-image-dark.png));
   background-repeat: no-repeat;
@@ -38,7 +38,7 @@
 .header__theme-menu-button {
   border: 1px solid transparent;
   padding: 2px 0 4px;
-  color: var(--color-accent, #FF0070);
+  color: var(--color-accent, #ff0070);
   font-family: inherit;
   font-size: var(--text-size-main, 18px);
   font-style: var(--text-style-main, normal);
@@ -50,7 +50,7 @@
 }
 
 .header__theme-menu-button_active {
-  border: 1px solid var(--color-accent, #FF0070);
+  border: 1px solid var(--color-accent, #ff0070);
   pointer-events: none;
 }
 .header__theme-menu-button:focus {
@@ -58,21 +58,24 @@
 }
 
 .header__theme-menu-button:focus-visible {
-  border-block-end: 1px solid var(--color-accent, #FF0070);
+  border-block-end: 1px solid var(--color-accent, #ff0070);
   outline: none;
 }
 
 .header__theme-menu-button:hover:not(.header__theme-menu-button_active) {
-  border: 1px solid var(--color-hover, #FF007066);
+  border: 1px solid var(--color-hover, #ff007066);
 }
 
 .header__title {
-  color: var(--color-title, #DB00FF);
+  color: var(--color-title, #db00ff);
   font-weight: var(--text-weight-additional, 700);
-  font-size: var( --text-size-title, clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem));
+  font-size: var(
+    --text-size-title,
+    clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem)
+  );
   font-style: var(--text-style-main, normal);
   line-height: var(--text-height-title, 82.5%);
-  text-shadow: 4px 4px 0px var(--color-shadow, #FF0070);
+  text-shadow: 4px 4px 0px var(--color-shadow, #ff0070);
 }
 
 .header__text {
@@ -84,16 +87,16 @@
 }
 
 .title-decor {
-  background-color: var(--bg-color-accent, #FF0070);
+  background-color: var(--bg-color-accent, #ff0070);
 }
 
 /* Стилизация декоративных элементов в шапке и подвале */
 .decorated-zone::before {
-  content: '';
+  content: "";
   position: absolute;
   display: block;
-  border-inline-end: 1px solid var(--color-accen, #FF0070);
-  border-block-start: 1px solid var(--color-accen, #FF0070);
+  border-inline-end: 1px solid var(--color-accen, #ff0070);
+  border-block-start: 1px solid var(--color-accen, #ff0070);
   inline-size: 25px;
   block-size: 25px;
   inset-inline-end: 10px;
@@ -101,10 +104,10 @@
 }
 
 .decorated-zone::after {
-  content: '';
+  content: "";
   position: absolute;
-  border-inline-start: 1px solid var(--color-accen, #FF0070);
-  border-block-end: 1px solid var(--color-accen, #FF0070);
+  border-inline-start: 1px solid var(--color-accen, #ff0070);
+  border-block-end: 1px solid var(--color-accen, #ff0070);
   inline-size: 25px;
   block-size: 25px;
   inset-inline-start: 10px;
@@ -112,9 +115,9 @@
 }
 
 .decoration-element::before {
-  content: 'REC';
+  content: "REC";
   position: absolute;
-  color: var(--color-accent, #FF0070);
+  color: var(--color-accent, #ff0070);
   font-weight: var(--text-weight-main, 400);
   font-size: var(--text-size-main, 18px);
   font-style: var(--text-style-main, normal);
@@ -124,11 +127,11 @@
 }
 
 .decoration-element::after {
-  content: '';
+  content: "";
   position: absolute;
   border-radius: 50%;
-  box-shadow: 0px 0px 4px var(--color-accent, #FF0070);
-  background-color: var(--bg-color-accent, #FF0070);
+  box-shadow: 0px 0px 4px var(--color-accent, #ff0070);
+  background-color: var(--bg-color-accent, #ff0070);
   inline-size: 9px;
   block-size: 9px;
   inset-inline-end: 19px;
@@ -147,7 +150,7 @@
 }
 
 .section__title {
-  color: var(--color-accent, #FF0070);
+  color: var(--color-accent, #ff0070);
   font-weight: var(--text-weight-additional, 700);
   font-size: var(--text-size-main, 18px);
   font-style: var(--text-style-main, normal);
@@ -184,12 +187,12 @@
 .text-link {
   position: relative;
   text-decoration: none;
-  text-shadow: 2px 2px 0px var(--color-link-shadow, #FF0070);
+  text-shadow: 2px 2px 0px var(--color-link-shadow, #ff0070);
   cursor: pointer;
 }
 
 .text-link:hover {
-  border-block-end: 1px solid var(--color-main, #F1B2CE);
+  border-block-end: 1px solid var(--color-main, #f1b2ce);
 }
 
 .text-link:focus {
@@ -202,9 +205,9 @@
 
 /* Рамка для ссылок по макету */
 .text-link:focus-visible::after {
-  content: '';
+  content: "";
   position: absolute;
-  border: 1px solid var(--color-main, #F1B2CE);
+  border: 1px solid var(--color-main, #f1b2ce);
   inset-block-start: 5px;
   inset-inline-start: -1px;
   inset-inline-end: -3px;
@@ -288,17 +291,19 @@
 }
 
 .footer__title {
-  color: var(--color-title, #DB00FF);
+  color: var(--color-title, #db00ff);
   font-weight: var(--text-weight-additional, 700);
-  font-size: var( --text-size-title, clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem));
+  font-size: var(
+    --text-size-title,
+    clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem)
+  );
   font-style: var(--text-style-main, normal);
   line-height: var(--text-height-title, 82.5%);
-  text-shadow: 4px 4px 0px var(--color-shadow, #FF0070);
+  text-shadow: 4px 4px 0px var(--color-shadow, #ff0070);
 }
 
-
 /* Стили для разрешения экрана с шириной больше 768px */
-@media(width >= 768px) {
+@media (width >= 768px) {
   .page {
     --text-size-title: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
     gap: 60px;
@@ -319,27 +324,27 @@
   }
 
   /* Стилизация декоративных элементов в шапке и подвале */
-.decorated-zone::before {
-  inset-inline-end: 20px;
-  inset-block-start: 20px;
-}
+  .decorated-zone::before {
+    inset-inline-end: 20px;
+    inset-block-start: 20px;
+  }
 
-.decorated-zone::after {
-  inset-inline-start: 20px;
-  inset-block-end: 20px;
-}
+  .decorated-zone::after {
+    inset-inline-start: 20px;
+    inset-block-end: 20px;
+  }
 
-.decoration-element::before {
-  inset-inline-end: 48px;
-  inset-block-start: 20px;
-}
+  .decoration-element::before {
+    inset-inline-end: 48px;
+    inset-block-start: 20px;
+  }
 
-.decoration-element::after {
-  inset-inline-end: 29px;
-  inset-block-start: 28px;
-}
+  .decoration-element::after {
+    inset-inline-end: 29px;
+    inset-block-start: 28px;
+  }
 
-/* Стилизация центрального контента */
+  /* Стилизация центрального контента */
   .content {
     gap: 80px;
   }
@@ -391,7 +396,7 @@
     grid-row: 2;
   }
 
- /* Сецция photo */
+  /* Сецция photo */
   .photo {
     gap: 20px;
   }
@@ -407,9 +412,9 @@
     grid-row: 1;
   }
 
-  .photo__list-item_two{
+  .photo__list-item_two {
     grid-column: 3;
-    grid-row: 1 / span 2 ;
+    grid-row: 1 / span 2;
   }
 
   .photo__list-item_three {
@@ -429,8 +434,7 @@
 }
 
 /* Стили для разрешения экрана с шириной больше 1024px */
-@media(width >= 1024px) {
-
+@media (width >= 1024px) {
   /* Стилизация шапки */
   .header__theme-menu {
     justify-self: center;
@@ -445,7 +449,7 @@
   .why {
     grid-template-columns: 1fr 66%;
     grid-template-rows: auto;
-}
+  }
 
   /* Секция what */
   .what .section__list {
